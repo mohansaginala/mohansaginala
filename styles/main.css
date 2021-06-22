@@ -1,0 +1,259 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+/* custom */
+html {
+    scroll-behavior: smooth;
+}
+.bd-callout {
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #e9ecef;
+        border-left-color: rgb(233, 236, 239);
+        border-left-width: 1px;
+    border-left-width: .25rem;
+    border-radius: .5rem;
+}
+.bd-callout-secondary {
+    border-left-color: #3d4446;
+}
+.bd-callout-info {
+    border-left-color: #5bc0de;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: rgba(0,0,0,0.5);
+    background-size: 50%;
+    border-radius: 100%;
+    padding: 5px;
+}
+#defaultLoader {
+    position: fixed;
+    background-color: #ffffff;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1051;
+}
+.profilePictureActions {
+    cursor: pointer;
+}
+/* custom */
+.mainWrapper .mainContent .bannerSection .bannerImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.mainWrapper .mainContent .profilePictureSection {
+    margin-top: 50vh;
+    background: #ffffff;
+}
+.mainWrapper .mainContent .profilePictureSection .profilePictureBlock {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+.mainWrapper .mainContent .profilePictureSection .profilePictureBlock .storyStatus {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.mainWrapper .mainContent .profilePictureSection .profilePictureBlock .storyStatus .profilePicture {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid transparent;
+}
+.mainWrapper .mainContent .profilePictureSection .profilePictureBlock .storyStatus .profilePicture:focus {
+    outline: none;
+}
+.mainWrapper .mainContent .profilePictureSection .fullName {
+    text-transform: uppercase;
+    cursor: pointer;
+    background: -webkit-linear-gradient(#ff4e00, #ec9f05, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-shadow: 0px 0px rgba(0,0,0,0.05); */
+}
+.usernameBlock .dpThumbnail {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+}
+.usernameBlock .username {
+    color: initial;
+    text-decoration: none;
+}
+.usernameBlock .momentBlock, .usernameBlock .locationBlock {
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+}
+.mainWrapper .mainContent .photoGallery .photoGalleryBlock {
+    width: 33.33%;
+}
+.mainWrapper .mainContent .videosGalleryBlock .videosGallery a {
+    position: relative;
+}
+.mainWrapper .mainContent .videosGalleryBlock .videosGallery a .videoPlayIconBlock {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+}
+.mainWrapper .mainContent .videosGalleryBlock .videosGallery a:hover .videoPlayIconBlock {
+    display: flex;
+}
+.mainWrapper .mainContent .videosGalleryBlock .videosGallery a img {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    object-position: center;
+}
+.mainWrapper .mainContent .videosGalleryBlock .videosGallery a .videoPosterBackgroundBlock {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+.mainWrapper .mainContent .videosGalleryBlock .videosGallery a img.videoPosterBackground {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.mainWrapper .mainContent #audioClipsBlock .audioBackground {
+    height: 240px;
+}
+.mainWrapper .mainContent #audioClipsBlock .audioBackground .audioClipBlock {
+    border: 1px solid rgba(0,0,0,.125);
+}
+.mainWrapper .mainContent #audioClipsBlock .audioBackground .audioBackgroundImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.mainWrapper .mainContent #audioClipsBlock .audioBackground .audioInfo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+}
+.mainWrapper .mainContent #audioClipsBlock .audioBackground .audioClip {
+    bottom: 0;
+}
+#featuredImagesBlock .featuredImages .featuredImagesArrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 50;
+}
+#featuredImagesBlock .featuredImages .featuredImagesArrows.featuredImagesLeft {
+    left: 0;
+}
+#featuredImagesBlock .featuredImages .featuredImagesArrows.featuredImagesRight {
+    right: 0;
+}
+#featuredImagesBlock .featuredImagesSection {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    margin-bottom: 1rem;
+    -ms-overflow-style: none;
+}
+#featuredImagesBlock .featuredImagesSection::-webkit-scrollbar{ 
+    display: none;
+}
+#featuredImagesBlock .featuredImagesSection .featuredImageBlock {
+    width: 100px;
+    height: 150px;
+    border-radius: 5%;
+    overflow: hidden;
+    margin-right: 15px;
+    display: inline-block;
+}
+#featuredImagesBlock .featuredImagesSection .featuredImageBlock .featuredImage {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    white-space: normal;
+}
+@media screen and (max-width: 991px) {
+    .mainWrapper .mainContent .bannerSection .bannerImage {
+        height: 25vh;
+    }
+    .mainWrapper .mainContent .profilePictureSection {
+        margin-top: 25vh;
+    }
+    .mainWrapper .mainContent .profilePictureSection .profilePictureBlock {
+        height: 75px;
+    }
+    .mainWrapper .mainContent .profilePictureSection .profilePictureBlock .storyStatus {
+        width: 150px;
+        height: 150px;
+    }
+    .mainWrapper .mainContent .profilePictureSection .profilePictureBlock .storyStatus .profilePicture {
+        width: 150px;
+        height: 150px;
+    }
+}
+footer .footerLogo {
+    border-radius: 15%;
+}
+footer .footer-links {
+    text-decoration: none;
+    font-weight: 100;
+}
+footer .copyrightSection {
+    font-size: 12px;
+    font-weight: 100;
+}

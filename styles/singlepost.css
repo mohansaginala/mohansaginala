@@ -1,0 +1,36 @@
+.mainWrapper .mainContent .infoSection {
+    font-weight: lighter;
+}
+.mainWrapper .mainContent .infoSection a {
+    color: initial;
+    text-decoration: none;
+}
+.mainWrapper .mainContent .singlePost .singlePostContent .card .card-body .profilePictureThumbnail {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+.mainWrapper .mainContent .singlePost .singlePostContent .card .card-body .postMoment, .mainWrapper .mainContent .singlePost .singlePostContent .card .card-body .postLocation {
+    font-size: 0.7rem;
+}
+.mainWrapper .mainContent .singlePost .singlePostContent .card .card-body .postContent>img {
+    max-height: 80vh;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+}
+.mainWrapper .mainContent .singlePost .singlePostContent .card .card-body .postContent #postContentCarousel .carousel-inner .carousel-item .postImage {
+    height: 50vh;
+    object-fit: contain;
+    position: relative;
+}
+
+@media screen and (min-width: 992px) {
+    .mainWrapper .mainContent .singlePost .singlePostContent .card .card-body .postContent #postContentCarousel .carousel-inner .carousel-item .postImage {
+        height: 80vh;
+        object-fit: contain;
+        position: relative;
+    }
+}

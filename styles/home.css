@@ -1,0 +1,17 @@
+.mainWrapper .mainContent .infoSection {
+    font-weight: lighter;
+}
+.mainWrapper .mainContent .infoSection a {
+    color: initial;
+    text-decoration: none;
+}
+.mainWrapper .mainContent .infoSection * {
+    font-weight: lighter;
+}
+.mainWrapper .mainContent .infoSection #postsSection.nav.nav-tabs .nav-item .nav-link:focus-visible{
+    outline: 0;
+}
+.mainWrapper .mainContent .infoSection #homePostsContent {
+    min-height: 30vh;
+    margin-bottom: 15vh;
+}

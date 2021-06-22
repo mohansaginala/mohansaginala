@@ -1,0 +1,23 @@
+.mainWrapper .mainContent .infoSection {
+    font-weight: lighter;
+}
+.mainWrapper .mainContent .infoSection a {
+    color: initial;
+    text-decoration: none;
+}
+.mainWrapper .mainContent .featuredImage .featuredImageContent .card .card-body .profilePictureThumbnail {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+.mainWrapper .mainContent .featuredImage .featuredImageContent .card .card-body .featuredMoment, .mainWrapper .mainContent .featuredImage .featuredImageContent .card .card-body .featuredLocation {
+    font-size: 0.7rem;
+}
+.mainWrapper .mainContent .featuredImage .featuredImageContent .card .card-body .featuredImageBlock img {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    object-position: center;
+}

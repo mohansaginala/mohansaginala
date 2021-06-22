@@ -1,0 +1,28 @@
+.mainWrapper .mainContent .infoSection {
+    font-weight: lighter;
+}
+.mainWrapper .mainContent .infoSection a {
+    color: initial;
+    text-decoration: none;
+}
+.mainWrapper .mainContent .singleVideo .singleVideoContent .card {
+    /* max-width: 540px; */
+}
+.mainWrapper .mainContent .singleVideo .singleVideoContent .card .card-body .postContent #postContentCarousel .carousel-inner .carousel-item {
+    position: relative;
+}
+.mainWrapper .mainContent .singleVideo .singleVideoContent .card .card-body .postContent #postContentCarousel .carousel-inner .carousel-item .postImage {
+    height: 50vh;
+    object-fit: contain;
+    position: relative;
+}
+.mainWrapper .mainContent .singleVideo .singleVideoContent .card .card-body .profilePictureThumbnail {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+.mainWrapper .mainContent .singleVideo .singleVideoContent .card .card-body .videoMoment, .mainWrapper .mainContent .singleVideo .singleVideoContent .card .card-body .videoLocation {
+    font-size: 0.7rem;
+}
