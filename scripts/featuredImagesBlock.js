@@ -1,4 +1,5 @@
 import { getAllFeaturedImages } from "./constants.js";
+let featuredImageID = (new URLSearchParams(window.location.search)).get('id');
 export default () => {
     (() => {
         fetch(getAllFeaturedImages, {
@@ -26,16 +27,18 @@ export default () => {
             var featuredImagesSection = document.createElement('div');
             featuredImagesSection.classList = 'featuredImagesSection w-100 py-4';
             data.forEach(element => {
-                var featuredImageBlock = document.createElement("div");
-                var featuredImageLink = document.createElement("a");
-                featuredImageLink.href = "/featured/image/?id=" + element._id;
-                featuredImageBlock.classList = "featuredImageBlock";
-                var featuredImage = document.createElement("img");
-                featuredImage.classList = "featuredImage";
-                featuredImage.src = element["media"][0].thumbnail;
-                featuredImageLink.append(featuredImage);
-                featuredImageBlock.append(featuredImageLink);
-                featuredImagesSection.append(featuredImageBlock);
+                if (featuredImageID !== element._id) {
+                    var featuredImageBlock = document.createElement("div");
+                    var featuredImageLink = document.createElement("a");
+                    featuredImageLink.href = "/featured/image/?id=" + element._id;
+                    featuredImageBlock.classList = "featuredImageBlock";
+                    var featuredImage = document.createElement("img");
+                    featuredImage.classList = "featuredImage";
+                    featuredImage.src = element["media"][0].thumbnail;
+                    featuredImageLink.append(featuredImage);
+                    featuredImageBlock.append(featuredImageLink);
+                    featuredImagesSection.append(featuredImageBlock);
+                }
             });
             featuredImages.append(featuredImagesLeftIcon, featuredImagesSection, featuredImagesRightIcon);
             featuredImagesBlock.append(featuredImagesHeading, featuredImages);
